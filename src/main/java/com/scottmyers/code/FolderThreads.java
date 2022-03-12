@@ -16,9 +16,12 @@ public class FolderThreads extends Thread {
     @Override
     public void run() {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-        String line = "";
-        System.out.println("Current Thread Name: " + Thread.currentThread().getName());
-        System.out.println("Current Thread ID: " + Thread.currentThread().getId());
+        String line = "---------------------------------\n";
+        System.out.println(line +
+                "Current Thread Name: " + Thread.currentThread().getName() +
+                "\nCurrent Thread ID  : " + Thread.currentThread().getId() +
+                "\nCurrently Watching : " + pathName+
+                "\n");
 
         try {
             WatchService watchService = null;
@@ -51,6 +54,6 @@ public class FolderThreads extends Thread {
                 e.printStackTrace();
             }
 
-    }
+        }
     }
 
