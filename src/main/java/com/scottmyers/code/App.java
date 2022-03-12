@@ -107,37 +107,3 @@ public class App
         pw.close();
     }
 }
-
-/*
-    CommandLineParser parser = new DefaultParser();
-    CommandLine cl = parser.parse(options, args);
-
-    CommandLine cmd = new DefaultParser().parse(options, cl.getArgs()); // new String[] {"-option", "a", "b", "-option", "c", "-dummy"});
-
-    List<String[]> thatOption = new ArrayList<String[]>();
-            for (Option opt : cl.getOptions()) {
-                    System.out.println("opt: " + opt.getOpt());
-                    // System.out.println("list : " + opt.getvaluesList());
-                    System.out.println("equals: " + opt.equals(options));
-
-                    thatOption.add(opt.getValues());
-                    for (String test :opt.getValues()) {
-                    System.out.println("->" + test);
-                    }
-                    System.out.println(Arrays.asList(opt.getValues()).toString());
-                    }
-
-                    System.out.println("size: " + thatOption.size());
-
-                String opt_config = cmd.getOptionValue("watch");
-                System.out.println("Folder(s) to watch: " + opt_config);
-
-} catch (Exception e) {
-            System.out.println("Values Error");
-            printHelp(options);
-            e.printStackTrace();
-            System.exit(-1);
-        }
-        finally { System.out.println("Exiting....");}
-*/
-
