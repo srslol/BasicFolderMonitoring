@@ -1,5 +1,4 @@
 package com.scottmyers.code;
-
 // import java.io.IOException;
 import org.apache.commons.cli.*;
 
