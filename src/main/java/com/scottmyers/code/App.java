@@ -11,8 +11,6 @@ import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-
-
 public class App
 {
     public static final Option ARG_WATCH = new Option("w", "watch",true, "Set function to Watch Folder with Automation.");
