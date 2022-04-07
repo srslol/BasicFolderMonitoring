@@ -105,9 +105,7 @@ public class App
         // logFile.close();
     }
 
-
     public static void startMe(String sourcePath, String targetPath) throws IOException {
-
         FolderThreads folderThread = new FolderThreads(sourcePath,targetPath);
         folderThread.start();
     }
@@ -141,5 +139,4 @@ public class App
     public static void writeLog(String line) throws IOException {
         logFile.write(line);
     }
-
 }
